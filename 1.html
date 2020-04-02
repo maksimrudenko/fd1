@@ -9,25 +9,59 @@
 </head>
 
 <body>
-    <h1 style="color: rgb(34, 0, 128)">Резюмэ</h1>
+    <style>
+        .point {
+            cursor: pointer;
+           
+        }
+
+        .border {
+            border: 5px solid rgb(55, 9, 141);
+        }
+
+        .cross {
+            cursor: crosshair;
+        }
+
+        .wait {
+            cursor: wait;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+    </style>
+    <h1 style="color: rgb(34, 0, 128)">Резюме</h1>
     <div style="background-color: rgba(255, 0, 0, 0.5);">
         <h2 style="color: green">Личные данные</h2>
-
+ 
+        <br><img src="img/mask.jpg"  class=point  width="100px" height="150" alt="Маска" title="Маска"></br>
+        <style>
+            img:hover {border: solid rgb(34, 0, 128);}
+            h2:hover {border:solid rgba(0,255,0,0.5);}
+        </style>
         <br>Руденко максим</br>
         <br>15.04.88</br>
         <br>Минск</br>
+
     </div>
 
-    <div style="background-color:rgba(0, 0,255, 0.5);">
+    <div class=cross style="background-color:rgba(0, 0,255, 0.5);">
         <h2 style=" color: green">Учебное заведение</h2>
-
+        <br>
+        <img class=round src="img/cartman.jpg" width="200" height="200" alt="картинка" title="cartman">
+        </br>
+        <style>
+            img:hover {border: solid rgb(34, 0, 128);}
+            h2:hover {border:solid rgba(0,255,0,0.5);}
+        </style>
         <ol>
             <Li>Школа</Li>
             <li>Коледж</li>
             <li>Институт</li>
         </ol>
     </div>
-    <div style="background-color:rgba(0,255,0,0.5);">
+    <div class=wait style="background-color:rgba(0,255,0,0.5);">
         <h3 style="color: green">Места работ</h3>
         <ul>
             <li>Тут</li>

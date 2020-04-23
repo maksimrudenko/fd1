@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>сверстать доску</title>
+</head>
+<body>
+  <style> 
+    body {margin: 0;
+    
+    }
+    body>div {
+      outline: solid 1px red;
+      width: 100vmin;
+      height: 90vmin;
+    }
+    body>div::before,
+        body>div::after {
+            content: "abcdefgh";
+            margin-left: 14vmin;
+            letter-spacing: 8vmin;
+            display: block;
+            height: 10vmin;
+            line-height: 10vmin;
+            font-size: 4vmin;
+        }
+    body>div>div {
+      outline: solid 1px red;
+      width: 10vmin;
+      height: 10vmin;
+    }
+    body>div>div:nth-child(even){
+      background-color: lightgreen;
+    }
+    body>div>div:nth-child(odd){
+      background-color: lightblue;
+    }
+  </style>
+  <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body  {
+            border: red solid 2px;
+            border-radius: 50%;
+            width: 100vmin;
+            height: 100vmin;
+            position: absolute;
+        }
+
+        body>div>div {
+            border: red solid 2vmin;
+            border-radius: 50%;
+            width: 5vmin;
+            height: 5vmin;
+            left: 10%;
+            top: 10%;
+            position: absolute;
+        }
+
+        body>div>:nth-child(2) {
+            border: red solid 2vmin;
+            border-radius: 50%;
+            width: 5vmin;
+            height: 5vmin;
+            left: 30%;            top: 10%;
+            position: absolute;
+        }
+
+        body>div>:nth-child(3) {
+            border: red solid 2vmin;
+            border-radius: 50%;
+            width: 60vmin;
+            height: 60vmin;
+            left: 20%;
+            top: 30%;
+            position: absolute;
+        }
+
+        .rot {
+            width: 70vmin;
+            height: 35vmin;
+            background-color: white;
+            border-radius: 0;
+            left: 19px;
+            top: 30%;
+            border: solid 1;
+
+
+        }
+
+        .okr {
+            width: 1.21vmin;
+            height: 1.2vmin;
+            border-radius: 50%;
+            background-color:black;
+            left: 22%;
+            top: 64%;
+            
+            z-index: 2;
+            
+        }
+    </style>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </div>
+    <div class="okr"></div>
+    <div class="rot"></div>
+</body>
+
+</html>

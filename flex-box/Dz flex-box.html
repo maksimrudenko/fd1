@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сверстать макет </title>
+</head>
+
+<body>
+    <style>
+       @media (max-width: 500px){
+        
+        .flex-footer,.flex-header,.flex-aside,.flex-article,.flex {
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+        }
+        .wrapper div,
+        li {
+
+            outline: 1px solid silver;
+            list-style-type: none;
+            margin: 20px;
+
+        }
+
+        .flex {
+            outline: 1px solid silver;
+            flex-basis: calc(33% - 40px);
+            margin: 20px;
+        }
+
+        .flex-header {
+            display: flex;
+
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+
+        .flex-aside {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .flex-article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+        .flex-footer {
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            flex-wrap: wrap;
+        }
+
+        #one,
+        #two {
+            flex-basis: 300px;
+        }
+
+        #three {
+            flex-basis: 120px;
+            margin-bottom: 10px;
+        }
+
+        #four {
+            flex-basis: 120px;
+            margin-top: 10px;
+        }
+
+
+        .box1 {
+
+            flex-basis: 10%;
+        }
+
+        .box2 {
+
+            flex-basis: 25%;
+        }
+
+        .box3 {
+
+            flex-basis: 50%;
+        }
+
+        .box4 {
+            flex-basis: 10%;
+        }
+
+        .box5 {
+            flex-basis: 80%;
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .box7 {
+            flex-basis: 20%;
+        }
+
+        .box8 {
+            flex-basis: 20%;
+        }
+    </style>
+    <div class="wrapper">
+        <header class="flex-header">
+            <div class="box1">
+                <h3>1</h3>
+
+            </div>
+            <div class="box2">
+                <h2>2</h2>
+            </div>
+            <div class="box3 ">
+                <h2>3</h2>
+                <p> Телефоны
+                    адреса
+                </p>
+            </div>
+        </header>
+        <hr>
+        <main>
+            <aside class="flex-aside">
+                <div class="box4">
+                    <h3>4</h3>
+                    <p>длиный текст длиный текстдлиный текст
+                        длиный текстдлиный текстдлиный текст
+                        длиный текстдлиный текстдлиный текст
+                        длиный текстдлиный текстдлиный текст
+                        длиный текстдлиный текстдлиный текст
+                    </p>
+                </div>
+                <div class="box5">
+                    <h3>5</h3>
+                </div>
+            </aside>
+            <article class="flex-article">
+                <div class="box6">
+                    <h3>7</h3>
+                </div>
+                <ul>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                </ul>
+                <div class="box7">8</div>
+                <div class="box8">9</div>
+            </article>
+            <hr>
+        </main>
+        <footer class="flex-footer">
+            <div id="one" class="flex">
+                <h3>10</h3>
+            </div>
+            <div id="two" class="flex">
+                <h3>11</h3>
+            </div>
+            <div id="three" class="flex">
+                <h3>12</h3>
+            </div>
+            <div id="four" class="flex">
+                <h3>13</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сверстать макет </title>
+</head>
+
+<body>
+    <style>
+        @media (min-width: 500px){
+        
+        .wrapper, .wrapper-2 {
+display: flex;
+align-items: stretch;
+flex-direction: row;
+
+}
+.wrapper-2 {
+    justify-content: space-between;
+}
+        }
+         
+        .wrapper div, .wrapper-2 div {
+            padding: 10px;
+            border: solid 1px silver;
+        }      
+        .box1 {
+            flex: 2;
+            order: 2;
+        }
+        .box2 {
+            flex: 2;
+            order: 1;
+        }
+        .box3 {
+            flex: 1;
+            order: 3;
+        }
+        .box { flex-basis: 20%;
+            
+        }
+        
+</style>
+	<div class="wrapper">
+		           
+			<div class="box1">
+                <h3>box1</h3>
+                <p>1111111111111111111
+                 11111111111 1111111111 1 </p>
+            </div>
+            <div class="box2"><h3>box2</h3>
+                <p>1111111111111111111
+                    11111111111 1111111111 1
+                </p>
+            </div>
+            <div class="box3"><h3>box3</h3>
+            <p>1111111111111111111
+                11111111111 1111111111 1
+            </p>
+            </div>
+	</div>
+            <div class="wrapper-2">
+		           
+                <div class="box">
+                    <h3>box1</h3>
+                    <p>1111111111111111111
+                     11111111111 1111111111 1 </p>
+                </div>
+                <div class="box"><h3>box2</h3>
+                    <p>1111111111111111111
+                        11111111111 1111111111 1
+                    </p>
+                </div>
+                <div class="box"><h3>box3</h3>
+                <p>1111111111111111111
+                    11111111111 1111111111 1
+                </p>
+                </div>
+		<!-- </header>
+		<hr>
+		<main>
+			<aside>
+				<div></div>
+				<div></div>
+			</aside>
+			<article>
+				<div></div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<div></div>
+				<div></div>
+			</article>
+			<hr>
+		</main>
+		<footer>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</footer>
+	</div> -->
+</body>
+</html> 
